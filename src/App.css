@@ -9,6 +9,38 @@ header {
   filter: blur(5px); /* Adding blur effect */
 }
 
+.our-story {
+  padding: 50px 0;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Path: src/fonts.css */
 .lato-thin {

@@ -16,7 +16,7 @@ export default function Header () {
             
             <nav className="hidden text-xl font-bold lg:flex space-x-4">
               <ul className="flex space-x-6 p-2">
-                <li className="hover:underline">Our Story</li>
+                <Link to={'/our-story'} className="hover:underline">Our Story</Link>
                 <li className="hover:underline"> Shop All</li>
                 <li className="hover:underline"> Products</li>
                 <li className="hover:underline"> About Us</li>
