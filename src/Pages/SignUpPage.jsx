@@ -26,7 +26,7 @@ export default function SignUpPage() {
                 <input
                   type="text"
                   id="name"
-                  placeholder="Magero Joshua"
+                  placeholder="Takuwa Rose"
                   className="w-full p-4 border border-gray-300 rounded"
                 />
               </div>
