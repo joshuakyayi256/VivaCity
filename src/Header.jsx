@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faMagnifyingGlass, faBagShopping } from '@fortawesome/free-solid-svg-icons';
@@ -13,13 +11,10 @@ export default function Header () {
           <div className="flex items-center space-x-4">
             {/* Insert the logo image */}
             {/* <img src={VivaCity} alt="VivaCity Logo" className="h-20 w-auto" /> */}
-            
             <nav className="hidden text-xl font-bold lg:flex space-x-4">
               <ul className="flex space-x-6 p-2">
                 <Link to={'/our-story'} className="hover:underline">Our Story</Link>
-                <li className="hover:underline"> Shop All</li>
                 <li className="hover:underline"> Products</li>
-                <li className="hover:underline"> About Us</li>
                 <li className="hover:underline"> Contact</li>
               </ul>
             </nav>

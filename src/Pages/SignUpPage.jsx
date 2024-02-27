@@ -84,7 +84,7 @@ export default function SignUpPage() {
                 className="text-blue-500 cursor-pointer"
                 onClick={() => setShowSignUp(false)}
               >
-                Log In
+                Login
               </span>
             </p>
           </>

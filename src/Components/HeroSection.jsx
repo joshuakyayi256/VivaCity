@@ -1,8 +1,9 @@
 import React from 'react';
+import image6 from '../images/image6.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="bg-cover bg-center text-white py-24" style={{ backgroundImage: 'url("https://images.pexels.com/photos/146715/pexels-photo-146715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=2000")', backgroundSize: 'cover' }}>
+    <section className="bg-cover bg-center text-white py-32 px-10" style={{ backgroundImage: `url(${image6})`, backgroundSize: '100%', backgroundRepeat: 'no-repeat'  }}>
       <div className="container mx-auto px-8">
         <h1 className="text-6xl font-bold mb-8 leading-tight">Discover Our Natural Products</h1>
         <p className="text-2xl mb-12">Handcrafted with care for your well-being!</p>

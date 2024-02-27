@@ -9,7 +9,7 @@ const LogIn = ({ onSignUpClick }) => {
       className="bg-cover bg-center h-auto flex justify-center items-center"
     >
       <div className="bg-white p-6 rounded max-w-xl w-full">
-        <h2 className="text-4xl font-bold text-center mb-8">Log In</h2>
+        <h2 className="text-4xl font-bold text-center mb-8">Login</h2>
         <form className="max-w-lg mx-auto">
           <div className="mb-4">
             <label
@@ -53,7 +53,7 @@ const LogIn = ({ onSignUpClick }) => {
               type="submit"
               className="w-full bg-teal-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded"
             >
-              Log In
+              Login
             </button>
           </div>
         </form>
