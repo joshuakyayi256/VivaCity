@@ -1,5 +1,6 @@
+// firebase.js
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBbAMq7_N7hz_9QTByioHDttKHq6LQjexI",
@@ -11,9 +12,11 @@ const firebaseConfig = {
     measurementId: "G-E2D2TFKJ5D"
 };
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const googleProvider = new GoogleAuthProvider();
+// Initialize Firebase
+const firebaseApp = initializeApp(firebaseConfig);
+const auth = getAuth(firebaseApp);
 
-export { auth, googleProvider };
+auth.redirectPolicy = 'same-origin';
 
+export { auth };
+export default auth;

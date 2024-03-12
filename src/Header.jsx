@@ -5,7 +5,7 @@ import { faUser, faMagnifyingGlass, faBagShopping } from '@fortawesome/free-soli
 export default function Header () {
   return (
     <div>
-      <header className="bg-teal-400 shadow-md py-4 text-white">
+      <header className="bg-teal-400 shadow-md py-4 text-white flex flex-col">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center space-x-4">

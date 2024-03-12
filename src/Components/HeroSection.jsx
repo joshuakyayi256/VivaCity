@@ -1,4 +1,3 @@
-import React from 'react';
 import image6 from '../images/image6.jpg';
 
 const HeroSection = () => {

@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "../firebase.js";
-
+import { auth } from "../firebase";
 
 const LogIn = ({ onSignUpClick }) => {
   const handleLogin = async (e) => {
@@ -30,7 +29,7 @@ const LogIn = ({ onSignUpClick }) => {
 
   return (
     <>
-      <section className="bg-cover bg-center h-screen flex justify-center items-center bg-blur">
+      <section className="bg-cover bg-center flex flex-col min-h-screen justify-center items-center bg-blur">
         <div className="p-6 rounded shadow-lg max-w-xl w-full">
           <h2 className="text-4xl font-bold text-center mb-8 text-white">Login</h2>
           <form onSubmit={handleLogin} className="mx-auto bg-gray-200 bg-opacity-70 p-8 rounded-lg">
@@ -45,7 +44,7 @@ const LogIn = ({ onSignUpClick }) => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="magerojoshua@example.com"
+                placeholder="johndoe@example.com"
                 className="w-full p-4 border border-gray-300 rounded"
               />
             </div>
@@ -63,15 +62,6 @@ const LogIn = ({ onSignUpClick }) => {
                 placeholder="********"
                 className="w-full p-4 border border-gray-300 rounded"
               />
-            </div>
-            <div className="mb-4 flex items-center">
-              <input type="checkbox" id="remember" className="mr-2" />
-              <label
-                htmlFor="remember"
-                className="text-gray-700 text-sm font-bold"
-              >
-                Remember me
-              </label>
             </div>
             <div>
               <button
@@ -92,10 +82,10 @@ const LogIn = ({ onSignUpClick }) => {
             </span>
           </p>
           <p className="text-center mt-4 text-white">
-            Or login with Google
+            Or login with
             <button
               onClick={handleGoogleLogin}
-              className="ml-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+              className="ml-2 px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700"
             >
               Google
             </button>
